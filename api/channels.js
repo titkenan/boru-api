@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     );
     
     if (!response.ok) {
-      throw new Error('GitHub data alinamadi');
+      throw new Error('GitHub data yuklenemedi');
     }
 
     const data = await response.json();
